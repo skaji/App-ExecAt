@@ -20,6 +20,7 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.008005",
   "NAME" => "App::ExecAt",
   "PREREQ_PM" => {
+    "Getopt::Long" => "2.36",
     "HTTP::Date" => 0,
     "Time::Piece" => 0
   },
@@ -34,6 +35,7 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Getopt::Long" => "2.36",
   "HTTP::Date" => 0,
   "Test::More" => "0.98",
   "Time::Piece" => 0
