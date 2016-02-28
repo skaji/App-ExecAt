@@ -1,0 +1,34 @@
+#!/usr/bin/perl
+(require App::ExecAt)->run(@ARGV);
+__END__
+
+=head1 NAME
+
+exec-at - execute command at execute command at certain time
+
+=head1 SYNOPSIS
+
+  > exec-at AT COMMANDS
+
+  Options:
+   -h, --help     show this help
+   -v, --version  show version
+   -q, --quiet    be quiet
+
+  Examples:
+   # Eg1) exec your command at the next 00 second
+   > exec-at minute /path/to/your/command arg1 arg2
+
+   # Eg2) exec your command at the next 00 minute, 00 second
+   > exec-at hour /path/to/your/command arg1 arg2
+
+   # Eg3) exec your command at the next 00 hour, 00 minute, 00 second
+   > exec-at day /path/to/your/command arg1 arg2
+
+   # Eg4) exec your command at nearly 5 minutes later (second will be normalized to 00)
+   > exec-at '5 minutes later' /path/to/your/command arg1 arg2
+
+   # Eg5) exec your command at 2016-12-30 23:59:59
+   > exec-at '2016-12-30 23:59:59' /path/to/your/command arg1 arg2
+
+=cut
