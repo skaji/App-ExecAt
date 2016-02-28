@@ -78,7 +78,7 @@ App::ExecAt - execute command at certain time
 
 =head1 SYNOPSIS
 
-  # exec command at the the next 00 second
+  # exec command at the next 00 second
   > exec-at minute /path/to/your/commad arg1 arg2
 
   # exec your command at nearly 5 minutes later (second will be normalized to 00)
